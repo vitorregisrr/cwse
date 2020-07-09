@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- partial:../partials/__head.html -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CWSE® Brasil Company</title>
+        <link rel="icon" href="/images/favicon.png"/>
+
+        <!-- Load META-TAGS for SEO -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="keywords" content=""/>
+        <META NAME="Googlebot" CONTENT="index,follow">
+        <META NAME="robots" CONTENT="index,follow">
+        <META NAME="Identifier-URL" CONTENT="http://www.cwsebrasil.com.br/">
+        <META NAME="url" CONTENT="http://www.cwsebrasil.com.br/">
+        <META NAME="Language" CONTENT="PT-BR">
+        <META NAME="content-language" CONTENT="pt-br">
+        <META NAME="distribution" CONTENT="Global">
+        <META NAME="coverage" CONTENT="Worldwide">
+        <META NAME="Author" CONTENT="Sorocabacom.com">
+        <META NAME="Generator" CONTENT="">
+        <meta name="description" content="CWSE® Brasil Company"/>
+
+        <!-- Load META-TAGS for SOCIAL MEDIAS -->
+        <meta property="og:title" content="Title">
+        <meta property="og:description" content="CWSE® Brasil Company">
+        <meta property="og:image" content="http://www.cwsebrasil.com.br/">
+        <meta property="og:url" content="http://www.cwsebrasil.com.br/">
+        <meta property="og:type" content="website"/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:site_name" content="http://www.cwsebrasil.com.br/">
+        <meta name="twitter:image:alt" content="CWSE® Brasil Company">
+        <meta property="fb:app_id" content="_app_id"/>
+        <meta name="twitter:site" content="@app">
+
+        <!-- Load Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Vendor JS -->
+        <script src="../vendors/js/vendor.bundle.base.js" defer></script>
+
+        <!-- Custom JS -->
+        <script src="../js/misc.js" defer></script>
+        <script src="../js/login.js" defer></script>
+        <script src="../js/carousels.js" defer></script>
+        <script src="../js/agendamento.js" defer></script>
+        <script src="../js/form-validaton.js" defer></script>
+        <script src="../js/responsivenav.js" defer></script>
+        <script src="../js/inputmasks.js" defer></script>
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- Load FONT AWESOME -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous">
+
+        <!-- partial -->
+    </head>
+
+    <body class=" wow fadeIn">
+        <main>
+            <section id="login" class="login">
+                <div class="login__side left">
+                    <div class="left-container">
+                        <div class="login__brand">
+                            <img src="../images/brands/main.png" alt="">
+                        </div>
+
+                        <div id="tabs" class="tab-content">
+
+                            <!-- Tab para login (inicial) -->
+                            <div class="login__tab active" id="login-1">
+
+                                <!-- Botão/Link para login google -->
+                                <a role="button" href="#" class="btn-google mt-2 mt-lg-4">
+                                    <i class="fab fa-google"></i>
+                                    Login com google
+                                </a>
+
+                                <div class="login__divisor">
+                                    <div></div>
+                                    <span>ou</span>
+                                    <div></div>
+                                </div>
+
+                                <div>
+                                    <!-- Formulário de login -->
+                                    <form class="login__form">
+                                        <div class="form-group">
+                                            <label for="#">
+                                                E-mail
+                                            </label>
+                                            <input
+                                                placeholder="nome@dominio.com.br"
+                                                class="form-control"
+                                                type="text"
+                                                name="email"
+                                                id="email"/>
+                                        </div>
+                                        <div class="form-group mt-3 mt-lg-4">
+                                            <label for="#">
+                                                Senha
+                                            </label>
+                                            <div class="form-password">
+                                                <input
+                                                    placeholder="•••••••••"
+                                                    class="form-control"
+                                                    type="password"
+                                                    name="password"
+                                                    id="password"/>
+                                                <button class="btn-eye" data-active="true" type="button">
+                                                    <i class="fa fa-eye"></i>
+                                                    <i class="fa fa-eye-slash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <a class="form-forget" href="#">
+                                                Esqueci minha senha
+                                            </a>
+                                        </div>
+
+                                        <!-- Botão submit login -->
+                                        <button class="btn btn-default mt-3 mt-lg-4" type="submit">
+                                            Acessar conta
+                                        </button>
+                                    </form>
+
+                                    <!-- Toggler para tab de cadastro -->
+                                    <div class="login-cadastre mt-3 mt-lg-5 pt-2 pt-lg-0">
+                                        Ainda não tem uma conta?
+                                        <a data-toggle="tab" href="#login-2">cadastre-se aqui</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tab para cadastro (2a tab) -->
+                            <div class="login__tab" id="login-2">
+
+                                <h1 class="login__title">
+                                    Criar uma conta
+                                </h1>
+
+                                <div class="d-flex flex-column">
+
+                                    <!-- Botões que alteram o valor do input hidden do formulário da próxima tab -->
+                                    <button class="btn-large-blue login-mod mb-3 active" data-type="empresa">
+                                        <i class="far fa-building mr-2"></i>
+                                        Sou Empresa
+                                    </button>
+                                    <button class="btn-large-blue login-mod " data-type="aluno">
+                                        <i class="far fa-user mr-2"></i>
+                                        Sou Aluno
+                                    </button>
+
+                                    <div class="login-cadastre text-left mt-3">
+                                        Ao prosseguir, você automaticamente concorda com os
+                                        <a href="#" data-toggle="modal" data-target="#termos-modal">
+                                            termos de segurança
+                                        </a>
+                                        e
+                                        <a href="#" data-toggle="modal" data-target="#termos-modal">
+                                            políticas de privacidade
+                                        </a>
+                                    </div>
+
+                                    <!-- Botão para prosseguir para a próxima tab (finalizar cadastro) -->
+                                    <a href="#login-3" data-toggle="tab" role="button" class="btn-default mt-3">
+                                        Continuar
+                                    </a>
+
+                                    <!-- Botão para voltar para a tab de login -->
+                                    <div class="login-cadastre mt-3 mt-lg-5 pt-2 pt-lg-0">
+                                       Já tem uma conta?
+                                        <a data-toggle="tab" href="#login-1">acesse aqui</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="login__tab" id="login-3">
+
+                                <h1 class="login__title">
+                                    Criar uma conta
+                                </h1>
+
+                                <a role="button" class="btn-google">
+                                    <i class="fab fa-google"></i>
+                                    Cadastrar com google
+                                </a>
+
+                                <div class="login__divisor">
+                                    <div></div>
+                                    <span>ou</span>
+                                    <div></div>
+                                </div>
+
+                                <div>
+                                    <form class="login__form" id="form-cadastro">
+                                        <input class="form-control" id="form-mod-input" type="hidden" value="#">
+                                        <div class="form-group">
+                                            <label for="#">
+                                                Nome
+                                            </label>
+                                            <input placeholder="Seu nome" class="form-control" type="text" name="email"/>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="#">
+                                                E-mail
+                                            </label>
+                                            <input placeholder="Seu e-mail" class="form-control" type="text" name="email"/>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label for="#">
+                                                Senha
+                                            </label>
+                                            <div class="form-password">
+                                                <input
+                                                    placeholder="•••••••••"
+                                                    class="form-control"
+                                                    type="password"
+                                                    name="password"
+                                                    id="password"/>
+                                                <button class="btn-eye" data-active="true" type="button">
+                                                    <i class="fa fa-eye"></i>
+                                                    <i class="fa fa-eye-slash"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <button class="btn btn-default" type="submit">
+                                            Criar conta
+                                        </button>
+                                    </form>
+
+                                    <div class="login-cadastre mt-3 mt-lg-4 pt-2 pt-lg-0">
+                                        Já tem uma conta?
+                                         <a data-toggle="tab" href="#login-1">acesse aqui</a>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login__side right">
+                    <!-- Listar os items apenas com o background (na mesma ordem do carousel) -->
+                    <div class="backgrounds">
+                        <!-- Item BG -->
+                        <div class="bg" data-active="true" style="background-image: url('../images/banners/banner-login.png');"></div>
+                        <div class="bg" data-active="false" style="background-image: url('../images/banners/banner-login.png');"></div>
+                        <div class="bg" data-active="false" style="background-image: url('../images/banners/banner-login.png');"></div>
+                        <!-- // -->
+                    </div>
+                    <div
+                        class="owl-carousel owl-default login__carousel"
+                        id="login-carousel">
+
+                        <!-- Listar items carousel -->
+                        <div class="login__carousel-item">
+                            <h3 class="login__carousel-title">
+                                Maior acervos de cursos do RN
+                            </h3>
+                            <p class="login__carousel-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus optio labore
+                                aut!
+                            </p>
+                        </div>
+                        <!-- // -->
+
+                        <div class="login__carousel-item">
+                            <h3 class="login__carousel-title">
+                               Lorem ipsum dolor sit amet.
+                            </h3>
+                            <p class="login__carousel-desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorum officiis, ex quibusdam iure pariatur rerum minima culpa possimus voluptatibus consectetur maxime dolor! Harum possimus laboriosam quibusdam ut rerum quo?
+                            </p>
+                        </div>
+                        <div class="login__carousel-item">
+                            <h3 class="login__carousel-title">
+                                Maior número de companias
+                            </h3>
+                            <p class="login__carousel-desc">
+                                Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, necessitatibus?
+                            </p>
+                        </div>
+                    </div>
+                    <div id="login-carousel-dots" class="owl-dots"></div>
+                </div>
+            </section>
+        </main>
+
+        <button class="scroll-top"></button>
+
+    </body>
+
+</html>

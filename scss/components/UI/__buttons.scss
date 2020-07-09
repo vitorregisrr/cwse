@@ -1,0 +1,57 @@
+.btn-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.1px solid #FF5757;
+    border-radius: 5px;
+    width: 100%;
+    padding: 16px;    
+    text-align: center;
+    font-size: 16px;
+    background-color: transparent;
+    color: #FF5757 !important; 
+    @include transition;
+
+    &:hover{
+        background-color: #FF5757;
+        color: #fff !important;
+    }
+
+    i{
+        font-size: 18px;
+        margin-right: 14px;
+        display: block;
+    }
+}
+
+.btn-default{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    padding: 14px;
+    border-radius: 6px;
+    background-color: #E1941B;
+    @include transition();
+
+    &:hover{
+        background-color: darken(#E1941B, 2);
+        color: #fff !important;
+    }
+}
+
+.btn-large-blue{
+    border: 1.2px solid transparentize(#414292, .5);
+    color: #414292;
+    background: none;
+    border-radius: 5px;
+    padding: 40px;
+    background-color: transparent;
+    @include transition();
+
+    &.active, &:hover{
+        background-color: #414292;
+        color: #fff;
+    }
+}
