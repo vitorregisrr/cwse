@@ -12,26 +12,26 @@
     opacity: 0;
     pointer-events: none;
     @include transition();
-
+    
     &[data-visible="true"]{
         opacity: 1;
         pointer-events: all;
-
+        
         .modal__content{
             transform: translateY(0px);
         }
     }
-
+    
     .backdrop{
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         z-index: -1;
     }
-
+    
     &__content{
         display: flex;
         flex-direction: column;
@@ -39,20 +39,21 @@
         border-radius: 15px;
         width: 460px;
         height: 68vh;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.267);
         transform: translateY(-60px);
         @include transition(0.4s);
-
+        
         @media screen and (max-width: $bp-SM){
             width: 89vw;
             height: 80vh;
         }
-
+        
         .scroll-bar.vertical{
             height: 90% !important;
             width: 10px;
         }
     }
-
+    
     &__header{
         display: flex;
         justify-content: space-between;
@@ -98,6 +99,16 @@
         .viewport{
             height: 100% !important; 
             width: 95% !important;
+
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 20%;
+                background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 0.603) 99%);
+            }
         }
     }
 }

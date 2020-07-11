@@ -95,3 +95,26 @@
 .bg-blue{
     background-color: $color-blue !important;
 }
+
+.custom-scroll{
+    .scroll-bar.vertical{
+        right: 12px;
+        
+        &::after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: rgba(0, 0, 0, 0.242);
+            transform: translateX(-50%);
+        }
+
+        .thumb{
+            background-color: #414292;
+            border-radius: 6px;
+            z-index: 2;
+        }
+    }
+}
