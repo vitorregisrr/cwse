@@ -22,6 +22,10 @@
         letter-spacing: -2px;
         padding: 2.8px 14px;
     }
+
+    &.error{
+        border-color: rgb(224, 119, 119);
+    }
 }
 
 .form-group{
@@ -31,6 +35,12 @@
         font-size: 15px;
         margin-bottom: 3px;
     }
+
+    label.error{
+        color: rgb(224, 119, 119);
+        font-size: 13px;
+        margin-top: 4px;
+    }
 }
 
 .form-password{
@@ -39,14 +49,13 @@
 
     .btn-eye{
         position: absolute;
-        top: 50%;
+        top: 24px;
         font-size: 13px;
         right: 20px;
         opacity: .8;
         background: none;
         background-color: none;
         border: none;
-        transform: translateY(-50%);
         color: #707070;
 
         .fa{

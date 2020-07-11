@@ -1,41 +1,58 @@
-$("#agendamento-form").validate({
+$("#form-login").validate({
     rules: {
-        nome: {
-            required: true,
-            minLength: 5
-        },
-
         email: {
             required: true,
             email: true
         },
-
-        periodo: {
+        password: {
             required: true,
-        },
-
-        telefone: {
-            required: true,
+            minLength: 6
         },
     },
 
     messages: {
-        nome: {
-            required: "Parece que você não escreveu seu nome",
-            minLength: "Seu nome parece estar incompleto"
+        password: {
+            required: "Digite sua senha",
+            minLength: "Sua senha deve ter no mínimo 6 caractéres"
         },
 
         email: {
-            required: 'Precisamos saber seu email',
+            required: 'Digite seu email',
             email: 'Email inválido'
         },
+    }
+});
 
-        periodo: {
-            required: 'Escolha um período',
+const recuperarValidate = $("#form-recuperar");
+recuperarValidate.validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
         },
+    },
 
-        telefone: {
-            required: 'Precisamos do seu telefone ou celular',
+    messages: {
+        email: {
+            required: 'Digite seu email',
+            email: 'Email inválido'
         },
+    }
+});
+
+$('#form-recuperar').submit(function(e){
+    e.preventDefault();
+    if(recuperarValidate.valid()){
+        $.ajax({
+            method: "POST",
+            url: "/",
+            data: { email: $('#form-recuperar-email').val()},
+            success: function( msg ) {
+                $('#alert-recuperar-success').show();
+            },
+            error: function( msg ) {
+                $('#alert-recuperar-error').show();
+            }
+        })
     }
 });
