@@ -98,7 +98,9 @@
 
 .custom-scroll{
     .scroll-bar.vertical{
-        right: 12px;
+        right: 14px;
+        display: flex;
+        justify-content: center;
         
         &::after{
             content: '';
@@ -106,15 +108,42 @@
             left: 50%;
             top: 0;
             height: 100%;
-            width: 2px;
-            background-color: rgba(0, 0, 0, 0.242);
+            width: 2.5px;
+            background-color: rgba(0, 0, 0, 0.3);
             transform: translateX(-50%);
         }
 
         .thumb{
             background-color: #414292;
-            border-radius: 6px;
+            border-radius: 6px !important;
+            width: 6px;
             z-index: 2;
+            cursor: pointer;
         }
+    }
+}
+
+.container{
+    @media screen and (min-width: $bp-MD){
+        max-width: 940px;
+    }
+    
+    @media screen and (min-width: $bp-XL){
+        max-width: 1340px;
+    }
+}
+
+.backdrop-transparent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 7;
+    display: none;
+
+    &[data-visible="true"]{
+        display: block;
     }
 }

@@ -1,72 +1,261 @@
 <nav id="main-nav" class="main-nav wow fadeInDown">
     <div class="container">
         <div class="main-nav__content">
+
             <div class="main-nav__brand">
-                <img src="../images/brands/main.png" alt="Logo CWSE">
-            </div>
-
-            <ul class="main-nav__items">
-                <li class="has-dropdown">
-                    Aprender
-
-                    <div class="menu-dropdown">
-
-                    </div>
-                </li>
-
-                <li>
-                    <a href="#">Meus cursos</a>
-                </li>
-
-                <li>
-                    <a href="#">Alunos</a>
-                </li>
-            </ul>
-
-            <form class="main-nav__search">
-                <div>
-                    <button type="submit">
-                        <i class="fa fa-search"></i>
-                    </button>
-                    <input type="text">
+                <a href="./index.html">
+                    <img src="../images/brands/main.png" alt="Logo CWSE"></a>
                 </div>
-            </form>
 
-            <div class="main-nav__actions">
-                <div class="main-nav__actions-notify">
-                    <i class="fa fa-bell"></i>
-                    <span class="warning"></span>
+                <div class="sub-nav">
 
-                    <div class="main-nav__dropdown">
-                        <div class="main-nav__dropdown-header">
-                            <h3 class="title">Notificações</h3>
-                        </div>
+                    <!-- Menu navegação DESKTOP (também existe um diferente para o mobile) -->
+                    <ul class="main-nav__items">
+                        <li class="has-dropdown">
+                            <a href="#">Aprender
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="arrow"></div>
+                            <div class="menu-dropdown" data-visible="false">
+                                <div class="menu-dropdown__item left">
+                                    <div class="menu-dropdown__header">
+                                        <h4 class="title">Categorias</h4>
+                                    </div>
+                                    <div class="menu-dropdown__body custom-scroll">
+                                        <ul class="menu-dropdown__links">
+                                            <li>
+                                                <a href="#">Operadores</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">NR35</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                        <div class="main-nav__dropdown-body custom-scroll">
-                            <div class="main-nav__dropdown-notify">
-                                <h4 class="title">Curso Treinamento GWO</h4>
-                                <p class="desc">Escolha os <b>6</b> alunos que vão participar desse treinamento</p>
-                                <a href="#">Escolher alunos</a>
+                                <div class="menu-dropdown__item right">
+                                    <div class="menu-dropdown__header lg">
+                                        <h4 class="title">Cursos</h4>
+                                    </div>
+                                    <div class="menu-dropdown__body custom-scroll lg">
+                                        <ul class="menu-dropdown__links">
+                                            <li>
+                                                <a href="#">Petróleo</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Parque eólico</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Parque solar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Sonda</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Trator agrícola</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Retroescavadeira</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="main-nav__dropdown-notify">
-                                <h4 class="title">Curso Treinamento GWO</h4>
-                                <p class="desc">Escolha os <b>6</b> alunos que vão participar desse treinamento</p>
-                                <a href="#">Escolher alunos</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Meus cursos</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Alunos</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-right">
+                        <!-- Formulário de pesquisa -->
+                        <form class="main-nav__search">
+                            <button type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <input type="text" placeholder="Buscar..." name="search"/>
+                        </form>
+
+                        <div class="main-nav__actions">
+
+                            <!-- Menu navegação MOBILE -->
+                            <div class="main-nav__actions-mobilemenu" data-active="false">
+                                <a href="#" class="toggler">
+                                    <i class="fa fa-bars"></i>
+                                    <div class="arrow"></div>
+                                </a>
+
+                                <div class="mobilem-dropdown" data-visible="false">
+                                    <!-- Formulário de pesquisa -->
+                                    <form class="mobilem-dropdown__search">
+                                        <button type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                        <input type="text" placeholder="Buscar..." name="search"/>
+                                    </form>
+
+                                    <div class="mobilem-dropdown__body custom-scroll">
+                                        <ul>
+                                            <li class="has-dropdown" data-active="false">
+                                                <a href="#">Aprender
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </a>
+
+                                                <ul class="mobilem-menu">
+                                                    <li class="has-dropdown" data-active="false">
+                                                        <a href="#">Categorias
+                                                            <i class="fa fa-chevron-down"></i>
+                                                        </a>
+                                                        <ul class="mobilem-menu">
+                                                            <li>
+                                                                <a href="#">NR35</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">NR35</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">NR35</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">NR35</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="has-dropdown" data-active="false">
+                                                        <a href="#">Cursos
+                                                            <i class="fa fa-chevron-down"></i>
+                                                        </a>
+                                                        <ul class="mobilem-menu">
+                                                            <li>
+                                                                <a href="#">Petróleo</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Petróleo</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Petróleo</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Petróleo</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="./meus-cursos.html">Meus cursos</a>
+                                            </li>
+                                            <li>
+                                                <a href="./alunos.html">Alunos</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="main-nav__dropdown-notify">
-                                <h4 class="title">Curso Treinamento GWO</h4>
-                                <p class="desc">Escolha os <b>6</b> alunos que vão participar desse treinamento</p>
-                                <a href="#">Escolher alunos</a>
+
+                            <div class="main-nav__actions-notify">
+                                <a href="#">
+                                    <i class="fa fa-bell"></i>
+                                    <!-- Exibir se houver notificações -->
+                                    <span class="warning"></span>
+                                    <!-- // -->
+                                    <div class="arrow"></div>
+                                </a>
+
+                                <div class="notify-dropdown" data-visible="false">
+                                    <div class="notify-dropdown__header">
+                                        <h3 class="title">Notificações</h3>
+                                    </div>
+                                    <div class="notify-dropdown__body custom-scroll">
+                                        <!-- Template item notificaçào -->
+                                        <div class="notify-dropdown__item">
+                                            <h4 class="title">Curso Treinamento GWO</h4>
+                                            <p class="desc">Escolha os
+                                                <b>6</b>
+                                                alunos que vão participar desse treinamento</p>
+                                            <a href="./escolher-alunos.html">Escolher alunos</a>
+                                        </div>
+                                        <!-- // -->
+                                        <div class="notify-dropdown__item">
+                                            <h4 class="title">Curso Treinamento GWO</h4>
+                                            <p class="desc">Escolha os
+                                                <b>6</b>
+                                                alunos que vão participar desse treinamento</p>
+                                            <a href="#">Escolher alunos</a>
+                                        </div>
+                                        <div class="notify-dropdown__item">
+                                            <h4 class="title">Curso Treinamento GWO</h4>
+                                            <p class="desc">Escolha os
+                                                <b>6</b>
+                                                alunos que vão participar desse treinamento</p>
+                                            <a href="#">Escolher alunos</a>
+                                        </div>
+                                        <div class="notify-dropdown__item">
+                                            <h4 class="title">Curso Treinamento GWO</h4>
+                                            <p class="desc">Escolha os
+                                                <b>6</b>
+                                                alunos que vão participar desse treinamento</p>
+                                            <a href="#">Escolher alunos</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="main-nav__dropdown-notify">
-                                <h4 class="title">Curso Treinamento GWO</h4>
-                                <p class="desc">Escolha os <b>6</b> alunos que vão participar desse treinamento</p>
-                                <a href="#">Escolher alunos</a>
+                            <div class="main-nav__actions-chart">
+                                <a href="./carrinho.html">
+                                    <i class="fa fa-shopping-cart"></i>
+
+                                    <!-- Número items carrinho -->
+                                    <span class="items">3</span>
+                                </a>
+                            </div>
+
+                            <div class="main-nav__actions-profile">
+                                <a href="#">
+                                    <img src="../images/ico/profile.jpg" alt="Avatar do perfil"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-</nav>
+        </nav>
+
+        <div class="backdrop-transparent" id="menu-dropdown-backdrop"></div>

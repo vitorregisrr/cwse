@@ -48,6 +48,7 @@
 <script src="../js/misc.js" defer></script>
 <script src="../js/login.js" defer></script>
 <script src="../js/modal.js" defer></script>
+<script src="../js/dropdowns.js" defer></script>
 <script src="../js/carousels.js" defer></script>
 <script src="../js/agendamento.js" defer></script>
 <script src="../js/form-validaton.js" defer></script>
@@ -96,7 +97,7 @@
 
                                 <div>
                                     <!-- Formulário de login -->
-                                    <form class="login__form" id="form-login" method="POST">
+                                    <form class="login__form" id="form-login" method="POST" action="./home.html">
                                         <div class="form-group">
                                             <label for="#">
                                                 E-mail
@@ -133,9 +134,14 @@
                                         </div>
 
                                         <!-- Botão submit login -->
-                                        <button class="btn btn-default mt-3 mt-lg-4" type="submit">
+                                        <!-- <button class="btn btn-default mt-3 mt-lg-4" type="submit">
                                             Acessar conta
-                                        </button>
+                                        </button> -->
+
+                                        <!-- Anchor provisorio de front -->
+                                         <a role="button" class="btn btn-default mt-3 mt-lg-4" href="./home.html" type="submit">
+                                            Acessar conta
+                                        </a>
                                     </form>
 
                                     <!-- Toggler para tab de cadastro -->
@@ -355,6 +361,10 @@
 
         
 
+        
+
+        
+
         <div id="termos-modal" class="modal" data-visible="false">
 
     <div class="modal__content">
@@ -474,6 +484,10 @@
 
     <div class="backdrop"></div>
 </div>
+
+        
+
+        
 
         
 
