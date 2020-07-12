@@ -127,7 +127,7 @@
     @media screen and (min-width: $bp-MD){
         max-width: 940px;
     }
-    
+
     @media screen and (min-width: $bp-XL){
         max-width: 1340px;
     }
@@ -140,7 +140,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0);
-    z-index: 7;
+    z-index: 5;
     display: none;
 
     &[data-visible="true"]{

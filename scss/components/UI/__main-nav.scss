@@ -1,4 +1,6 @@
 .main-nav {
+    position: fixed;
+    z-index: 8;
     background-color: #fff;
     width: 100vw;
 
@@ -99,7 +101,7 @@
                 opacity: 0;
                 position: relative;
                 overflow: visible;
-                z-index: 9;
+                z-index: 12;
                 @include transition();
 
                 &:after {
@@ -140,6 +142,7 @@
             .notify-dropdown {
                 display: flex;
                 flex-direction: column;
+                background-color: #fff;
                 opacity: 0;
                 position: absolute;
                 z-index: 8;
@@ -234,7 +237,7 @@
                 opacity: 0;
                 position: relative;
                 overflow: visible;
-                z-index: 9;
+                z-index: 12;
                 @include transition();
 
                 &:after {
@@ -255,6 +258,7 @@
                 display: flex;
                 flex-direction: column;
                 opacity: 0;
+                background-color: #fff;
                 position: absolute;
                 z-index: 10;
                 right: 0;
@@ -507,14 +511,14 @@
                     opacity: 0;
                     position: relative;
                     overflow: visible;
-                    z-index: 9;
+                    z-index: 15;
                     @include transition();
 
                     &:after {
                         content: '';
                         position: absolute;
                         left: 50%;
-                        bottom: -40px;
+                        bottom: -47px;
                         transform: translateX(-50%);
                         width: 0;
                         height: 0;
@@ -525,7 +529,11 @@
                 }
             }
             &:not(:last-child) {
-                margin-right: 36px;
+                margin-right: 56px;
+
+                @media screen and (max-width: $bp-XL){
+                    margin-right: 36px;
+                }
 
                 @media screen and (max-width: $bp-MD){
                     margin-right: 0;
@@ -553,9 +561,10 @@
         display: flex;
         opacity: 0;
         position: absolute;
-        z-index: 8;
+        background-color: #fff;
+        z-index: 12;
         left: 30px;
-        margin-top: 40px;
+        margin-top: 47px;
         width: 680px;
         box-shadow: 0 5px 30px rgba(0, 0, 0, .11);
         height: 70vh;

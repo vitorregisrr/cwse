@@ -143,7 +143,7 @@
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-  z-index: 7;
+  z-index: 5;
   display: none;
 }
 
@@ -693,6 +693,8 @@ button:focus {
 }
 
 .main-nav {
+  position: fixed;
+  z-index: 8;
   background-color: #fff;
   width: 100vw;
 }
@@ -816,7 +818,7 @@ button:focus {
   opacity: 0;
   position: relative;
   overflow: visible;
-  z-index: 9;
+  z-index: 12;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -861,6 +863,7 @@ button:focus {
 .main-nav__actions-notify .notify-dropdown {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
   opacity: 0;
   position: absolute;
   z-index: 8;
@@ -958,7 +961,7 @@ button:focus {
   opacity: 0;
   position: relative;
   overflow: visible;
-  z-index: 9;
+  z-index: 12;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -983,6 +986,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   opacity: 0;
+  background-color: #fff;
   position: absolute;
   z-index: 10;
   right: 0;
@@ -1243,7 +1247,7 @@ button:focus {
   opacity: 0;
   position: relative;
   overflow: visible;
-  z-index: 9;
+  z-index: 15;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -1255,7 +1259,7 @@ button:focus {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -40px;
+  bottom: -47px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -1265,7 +1269,13 @@ button:focus {
 }
 
 .main-nav__items li:not(:last-child) {
-  margin-right: 36px;
+  margin-right: 56px;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-nav__items li:not(:last-child) {
+    margin-right: 36px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1297,9 +1307,10 @@ button:focus {
   display: flex;
   opacity: 0;
   position: absolute;
-  z-index: 8;
+  background-color: #fff;
+  z-index: 12;
   left: 30px;
-  margin-top: 40px;
+  margin-top: 47px;
   width: 680px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.11);
   height: 70vh;
@@ -2363,6 +2374,7 @@ body {
 main {
   background-color: #F7F7F8;
   max-width: 100vw;
+  min-height: 140vh;
   overflow: hidden;
 }
 
