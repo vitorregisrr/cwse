@@ -2,5 +2,8 @@
 // require('./misc');
 // require('./carousels');
 // require('./inputmasks');
-// require('./form-validation');
+// require('./forms');
+// require('./dropdowns');
+// require('./modal');
+// require('./login');
 // require('./responsivenav');
