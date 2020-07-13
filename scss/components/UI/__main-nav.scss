@@ -36,32 +36,10 @@
             @media screen and (max-width: $bp-MD){
                 width: 110px;
             }
-        }
-    }
 
-    &__search {
-        display: flex;
-        margin-right: 120px;
-        width: auto;
-
-        @media screen and (max-width: $bp-MD){
-            display: none !important;
-        }
-
-        input{
-            width: 140px;
-
-            @media screen and (max-width: $bp-LG){
-                width: 110px;
+            @media screen and (max-width: 325px){
+                width: 90px;
             }
-            
-        }
-
-        @media screen and (max-width: $bp-XL){
-            margin-right: 20px;
-        }
-        @media screen and (max-width: $bp-LG){
-            margin-right: 0px;
         }
     }
 
@@ -76,6 +54,10 @@
             @media screen and (max-width: $bp-MD){
                 font-size: 20px;
             }
+
+            @media screen and (max-width: 325px){
+                font-size: 18px;
+            }
         }
 
         &-notify {
@@ -87,8 +69,8 @@
                 margin-top: 0;
             }
 
-            @media screen and (max-width: $bp-MD){
-                margin-right: 25px;
+            @media screen and (max-width: 325px){
+                margin-right: 18px;
             }
 
             &[data-active="true"]{
@@ -155,12 +137,10 @@
                 pointer-events: none;
                 @include transition(0.4s);
 
-                
                 @media screen and (max-width: $bp-MD){
                     width: 90vw;
                     right: 5vw;
                 }
-                
 
                 &[data-visible="true"] {
                     opacity: 1;
@@ -227,6 +207,16 @@
                display: block;
             }
 
+            @media screen and (max-width: 325px){
+                margin-right: 18px;
+
+                a{
+                    @media screen and (max-width: 325px){
+                        font-size: 19px !important;
+                    }
+                }
+            }
+
             &[data-active="true"]{
                 .arrow{
                     opacity: 1;
@@ -270,6 +260,9 @@
                 pointer-events: none;
                 @include transition(0.4s);
 
+                .overview{
+                    width: 100%;
+                }
                 
                 @media screen and (max-width: $bp-MD){
                     width: 90vw;
@@ -288,11 +281,16 @@
                     align-items: center;
                     justify-content: space-between;
                     width: 100%;
-                    padding: 35px 58px;
+                    padding: 30px 58px;
                     padding-bottom: 0;
                     border-bottom: 1px solid rgb(224, 224, 224);
-                    padding-bottom: 25px;
+                    padding-bottom: 23px;
             
+                    @media screen and (max-width: 325px){
+                        padding-left: 33px;
+                        padding-right: 33px;
+                    }
+
                     button {
                         background: none;
                         border: none;
@@ -324,22 +322,34 @@
                     }
 
                     ul{
+                        width: 100%;
                         list-style: none;
                         
                         li{
                             margin-bottom: 10px;
+                            width: 100%;
 
                             &.has-dropdown{
                                 margin-top: 10px;
+
+                                &[data-active="true"]{
+                                    & > a{
+                                        i.fa-chevron-down{
+                                            transform: rotate(-180deg);
+                                            margin-bottom: 4px;
+                                        }
+                                    }
+                                }
 
                                 a{
                                     display: flex;
                                     align-items: center;
 
                                     i{
-                                        font-size: 14px;
-                                        margin-left: 10px;
+                                        font-size: 13px;
+                                        margin-left: 8px;
                                         margin-top: 4px;
+                                        @include transition();
                                     }
                                 }
 
@@ -360,8 +370,6 @@
                                 
                                 a{
                                     font-size: 18px !important;
-                                    margin-bottom: 10px;
-
                                     i{
                                         font-size: 11px !important;;
                                     }
@@ -369,6 +377,12 @@
 
                                 ul{
                                 
+                                    li{
+                                        &:first-child{
+                                            margin-top: 9px;
+                                        }
+                                    }
+
                                     a{
                                         font-size: 16px !important;
                                         margin-bottom: -5px !important;
@@ -394,6 +408,10 @@
             @media screen and (max-width: $bp-MD){
                 margin-right: 31px;
                 margin-top: 0;
+            }
+
+            @media screen and (max-width: 325px){
+                margin-right: 25px;
             }
 
             .items {
@@ -423,6 +441,11 @@
                 width: 45px;
                 height: 45px;
                 margin-top: -5px;
+            }
+
+            @media screen and (max-width: 325px){
+                width: 41px;
+                height: 41px;
             }
 
             img {
@@ -553,10 +576,6 @@
         }
     }
 
-    &__actions {
-        display: flex;
-    }
-
     .menu-dropdown {
         display: flex;
         opacity: 0;
@@ -652,6 +671,7 @@
             li {
                 margin-bottom: 8px;
                 font-size: 16px;
+                
                 &:hover {
                     font-weight: 500;
                 }
@@ -667,6 +687,21 @@
     &__search {
         display: flex;
         align-items: center;
+        display: flex;
+        margin-right: 120px;
+        width: auto;
+
+        @media screen and (max-width: $bp-MD){
+            display: none !important;
+        }
+
+        @media screen and (max-width: $bp-XL){
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            margin-right: 0px;
+        }
 
         button {
             background: none;
@@ -678,6 +713,12 @@
             background: none;
             border: none;
             color: #909090;
+            width: 140px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 110px;
+            }
+            
             &:active,
             &:focus {
                 border: none;
