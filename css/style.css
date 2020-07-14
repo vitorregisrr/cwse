@@ -2503,6 +2503,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 
 .v-card.sm .v-card__caption-desc {
   margin-bottom: 9px;
+  color: #383838 !important;
 }
 
 .v-card.sm .v-card__footer {
@@ -2740,7 +2741,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-size: 16px;
-  color: #414292;
+  color: #383838;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
