@@ -3,6 +3,7 @@
    width: 100vw;
    height: 100vh;
    min-height: 700px;
+   background-color: #fff;
 
    @media screen and (max-width: $bp-LG){
       flex-direction: column;
@@ -98,14 +99,14 @@
 
       img{
          width: 100%;
-         margin-bottom: 40px;
+         margin-bottom: 20px;
       }
    }
 
    &__divisor{
       display: flex;
       align-items: center;
-      margin: 23px 0 19px 0;
+      margin: 21px 0 17px 0;
 
       @media screen and (max-width: $bp-LG){
          margin: 16px 0 12px 0;

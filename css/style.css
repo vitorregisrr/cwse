@@ -9,7 +9,7 @@
   position: relative;
   font-weight: 300;
   margin-bottom: 40px;
-  color: #333333;
+  color: #414292;
 }
 
 .section-title:after {
@@ -192,7 +192,7 @@
 }
 
 .color-secondary {
-  color: #333333 !important;
+  color: #414292 !important;
 }
 
 .color-dark {
@@ -808,7 +808,7 @@ button:focus {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -40px;
+  bottom: -35px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -846,9 +846,9 @@ button:focus {
   position: absolute;
   z-index: 8;
   right: 0;
-  margin-top: 40px;
+  margin-top: 34px;
   width: 440px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.16);
   height: 70vh;
   border-radius: 18px;
   pointer-events: none;
@@ -873,7 +873,7 @@ button:focus {
 }
 
 .main-nav__actions-notify .notify-dropdown__header {
-  border-bottom: 1.4px solid #eeeeee;
+  border-bottom: 1.4px solid whitesmoke;
   padding: 28px 50px 19px 35px;
 }
 
@@ -892,7 +892,7 @@ button:focus {
 }
 
 .main-nav__actions-notify .notify-dropdown__item {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid whitesmoke;
   padding-bottom: 28px;
   margin-bottom: 28px;
 }
@@ -963,7 +963,7 @@ button:focus {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -40px;
+  bottom: -32px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -980,9 +980,9 @@ button:focus {
   position: absolute;
   z-index: 10;
   right: 0;
-  margin-top: 40px;
+  margin-top: 32px;
   width: 440px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.16);
   height: 70vh;
   border-radius: 18px;
   pointer-events: none;
@@ -1288,7 +1288,7 @@ button:focus {
   content: '';
   position: absolute;
   left: 50%;
-  bottom: -47px;
+  bottom: -43px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
@@ -1335,9 +1335,9 @@ button:focus {
   background-color: #fff;
   z-index: 12;
   left: 30px;
-  margin-top: 47px;
+  margin-top: 42px;
   width: 680px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.16);
   height: 70vh;
   border-radius: 18px;
   pointer-events: none;
@@ -1403,8 +1403,8 @@ button:focus {
 }
 
 .main-nav .menu-dropdown__header {
-  border-bottom: 1.4px solid #eeeeee;
-  padding: 33px 35px 20px 35px;
+  border-bottom: 1.4px solid whitesmoke;
+  padding: 33px 35px 20px 30px;
 }
 
 .main-nav .menu-dropdown__header .title {
@@ -1418,11 +1418,11 @@ button:focus {
 
 .main-nav .menu-dropdown__body {
   height: 100%;
-  padding: 20px 65px 40px 35px;
+  padding: 20px 65px 40px 30px;
 }
 
 .main-nav .menu-dropdown__body .scroll-bar {
-  right: 19px;
+  right: 27px;
 }
 
 .main-nav .menu-dropdown__body.lg {
@@ -1439,12 +1439,18 @@ button:focus {
   font-size: 16px;
 }
 
-.main-nav .menu-dropdown__links li:hover {
+.main-nav .menu-dropdown__links li.title {
+  color: #414292;
+  font-weight: 600;
   font-weight: 500;
 }
 
+.main-nav .menu-dropdown__links li:hover {
+  color: #414292;
+}
+
 .main-nav .menu-dropdown .right {
-  border-left: 1.4px solid #eeeeee;
+  border-left: 1.4px solid whitesmoke;
 }
 
 .main-nav__search {
@@ -2188,6 +2194,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   width: 100vw;
   height: 100vh;
   min-height: 700px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 992px) {
@@ -2295,13 +2302,13 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 
 .login__brand img {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .login__divisor {
   display: flex;
   align-items: center;
-  margin: 23px 0 19px 0;
+  margin: 21px 0 17px 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -2408,12 +2415,12 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 body {
   position: relative;
   margin: 0;
-  background-color: #fff;
+  background-color: #383838;
   font-family: 'Rubik', sans-serif;
   max-width: 100vw;
   overflow-x: hidden;
   font-size: 16px;
-  color: #333333;
+  color: #414292;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
