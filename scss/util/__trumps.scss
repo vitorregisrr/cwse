@@ -129,7 +129,7 @@
     }
 
     @media screen and (min-width: $bp-XL){
-        max-width: 1340px;
+        max-width: 1290px;
     }
 }
 
@@ -146,4 +146,9 @@
     &[data-visible="true"]{
         display: block;
     }
+}
+
+.w-auto{
+    width: auto !important;
+    display: inline-block !important;
 }

@@ -571,7 +571,7 @@
             }
 
             &:hover {
-                color: #414292;
+                color: $color-secondary
             }
         }
     }
@@ -731,6 +731,12 @@
                 outline: none;
                 box-shadow: none;
             }
+        }
+    }
+
+    li li{
+        a:hover{
+            color: $color-primary !important;
         }
     }
 }

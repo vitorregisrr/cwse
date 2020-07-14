@@ -19,7 +19,7 @@
   top: 120%;
   width: 90px;
   height: 1.4px;
-  background-color: #F48472;
+  background-color: #E1941B;
   opacity: 0.5;
 }
 
@@ -132,7 +132,7 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1340px;
+    max-width: 1290px;
   }
 }
 
@@ -149,6 +149,11 @@
 
 .backdrop-transparent[data-visible="true"] {
   display: block;
+}
+
+.w-auto {
+  width: auto !important;
+  display: inline-block !important;
 }
 
 .inner-title {
@@ -184,7 +189,7 @@
 }
 
 .color-primary {
-  color: #F48472 !important;
+  color: #E1941B !important;
 }
 
 .color-white {
@@ -323,7 +328,7 @@ button:focus {
   position: absolute;
   color: #fff;
   font-size: 40px;
-  background-color: #F48472;
+  background-color: #E1941B;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -466,7 +471,7 @@ button:focus {
   align-items: center;
   color: #fff;
   font-size: 13px;
-  background-color: #F48472;
+  background-color: #E1941B;
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -491,7 +496,7 @@ button:focus {
   -ms-transform: scale(1.04);
   -o-transform: scale(1.04);
   transform: scale(1.04);
-  background-color: #f26f5a;
+  background-color: #ca8518;
 }
 
 @media screen and (min-width: 992px) {
@@ -550,7 +555,7 @@ button:focus {
     margin-top: 0;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #F48472;
+    background-color: #E1941B;
   }
 }
 
@@ -1504,6 +1509,10 @@ button:focus {
   box-shadow: none;
 }
 
+.main-nav li li a:hover {
+  color: #E1941B !important;
+}
+
 .form-control {
   width: 100%;
   font-size: 14px;
@@ -1954,7 +1963,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   font-weight: 500;
   color: #fff;
   width: 100%;
-  padding: 14px;
+  padding: 15px 25px;
   border-radius: 6px;
   background-color: #E1941B;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2018,7 +2027,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 }
 
 .footer__list a:hover {
-  color: #F48472 !important;
+  color: #E1941B !important;
 }
 
 .footer__list a.btn-media {
@@ -2187,6 +2196,92 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   .contact-btn {
     display: none;
   }
+}
+
+.h-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 346px;
+  padding: 28px 30px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.h-card__bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.h-card__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.h-card__tag {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+}
+
+.h-card__tag i {
+  margin-right: 8px;
+}
+
+.h-card__caption {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.h-card__caption-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 11px;
+}
+
+.h-card__caption-time {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.h-card__caption-time i {
+  margin-right: 9px;
+}
+
+.h-card:hover .h-card__bg {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.h-card:hover .h-card__caption {
+  padding-bottom: 4px;
 }
 
 .login {
@@ -2436,6 +2531,16 @@ main {
   max-width: 100vw;
   min-height: 100vh;
   overflow: hidden;
+}
+
+main.interna {
+  padding-top: 170px;
+}
+
+@media screen and (max-width: 992px) {
+  main.interna {
+    padding-top: 120px;
+  }
 }
 
 /*# sourceMappingURL=maps/style.css.map */

@@ -36,4 +36,12 @@ main{
     max-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
+
+    &.interna{
+        padding-top: 170px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-top: 120px;
+        }
+    }
 }

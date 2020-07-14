@@ -4,6 +4,7 @@
     //!!! DROPDOWNS DO NAVBAR !!!//
 
     function closeAll(close1, close2, close3){
+        $('#menu-dropdown-backdrop').attr('data-visible', false);
         if(close1){
             $('.main-nav .menu-dropdown').attr('data-visible', false);
             $('.main-nav .has-dropdown').attr('data-active', false);
