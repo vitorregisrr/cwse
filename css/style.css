@@ -1952,6 +1952,8 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   font-size: 16px;
   background-color: transparent;
   color: #FF5757 !important;
+  -webkit-appearance: none;
+  appearance: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -1979,6 +1981,8 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   padding: 15px 25px;
   border-radius: 6px;
   background-color: #E1941B;
+  -webkit-appearance: none;
+  appearance: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -1998,6 +2002,8 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   border-radius: 5px;
   padding: 40px;
   background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
