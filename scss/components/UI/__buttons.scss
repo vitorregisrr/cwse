@@ -10,6 +10,8 @@
     font-size: 16px;
     background-color: transparent;
     color: #FF5757 !important; 
+    -webkit-appearance: none;
+    appearance: none;
     @include transition;
 
     &:hover{
@@ -33,6 +35,8 @@
     padding: 15px 25px;
     border-radius: 6px;
     background-color: #E1941B;
+    -webkit-appearance: none;
+    appearance: none;
     @include transition();
 
     &:hover{
@@ -48,6 +52,8 @@
     border-radius: 5px;
     padding: 40px;
     background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
     @include transition();
 
     &.active, &:hover{
