@@ -1,0 +1,32 @@
+.cursos-filtro{
+
+    b{
+        font-weight: 500;
+    }
+
+    .title{
+        color: $color-dark;
+    }
+
+    li{
+        margin-bottom: 6px;
+    }
+
+    a{
+        display: flex;
+        align-items: center;
+        color: $color-dark !important;
+        @include transition();
+
+        &:hover{
+            color: $color-primary !important;
+        }
+
+        i{
+            display: block;
+            font-size: 12px;
+            margin-left: 8px;
+            margin-top: 2px;
+        }
+    }
+}

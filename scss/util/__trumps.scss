@@ -129,7 +129,7 @@
     }
 
     @media screen and (min-width: $bp-XL){
-        max-width: 1290px;
+        max-width: 1270px;
     }
 }
 
@@ -151,4 +151,8 @@
 .w-auto{
     width: auto !important;
     display: inline-block !important;
+}
+
+.bg-gray-dark{
+    background-color: #EDEDED !important;
 }

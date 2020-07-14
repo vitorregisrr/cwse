@@ -1,4 +1,4 @@
-.form-control{
+.form-control {
     width: 100%;
     font-size: 14px;
     padding: 13px 14px;
@@ -8,57 +8,66 @@
     color: #383838;
     font-weight: 400;
     border-radius: 5px;
-    
-    &:focus{
+    &:focus {
         box-shadow: none;
         border: 1px solid #636363;
         outline: none;
         color: #383838;
     }
 
-    &[type="password"]{
+    &[type="password"] {
         font-size: 35px;
         line-height: 20px;
         letter-spacing: -2px;
         padding: 2.8px 14px;
     }
 
-    &.error{
+    &.error {
         border-color: rgb(224, 119, 119);
     }
+
 }
 
-.form-group{
-    label{
+.select-transparent {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-weight: bold;
+    padding: 0 !important;
+    margin-left: -3px;
+}
+
+.form-group {
+    label {
         display: block;
         color: #909090;
         font-size: 15px;
         margin-bottom: 3px;
     }
 
-    label.error{
+    label.error {
         color: rgb(224, 119, 119);
         font-size: 13px;
         margin-top: 4px;
     }
 }
 
-.form-password{
+.form-password {
     position: relative;
     width: 100%;
 
-    .btn-eye{
+    .btn-eye {
         position: absolute;
         top: 24px;
         font-size: 13px;
         right: 20px;
-        opacity: .8;
+        opacity: 0.8;
         background: none;
         background-color: none;
         border: none;
         color: #707070;
 
-        .fa{
+        .fa {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -67,20 +76,20 @@
             transition: opacity 0.2s;
         }
 
-        .fa-eye-slash{
+        .fa-eye-slash {
             opacity: 0;
         }
 
-        .fa-eye{
+        .fa-eye {
             opacity: 1;
         }
 
-        &[data-active="false"]{
-            .fa-eye{
+        &[data-active="false"] {
+            .fa-eye {
                 opacity: 0;
             }
 
-            .fa-eye-slash{
+            .fa-eye-slash {
                 opacity: 1;
             }
         }
