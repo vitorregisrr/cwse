@@ -81,6 +81,7 @@
         &.limit-height{
             max-height: 180px;
             overflow: hidden;
+            transition: all 1s;
 
             &.expanded{
                 max-height: 3000px;

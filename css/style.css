@@ -3026,6 +3026,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 .interna-curso .markup.limit-height {
   max-height: 180px;
   overflow: hidden;
+  transition: all 1s;
 }
 
 .interna-curso .markup.limit-height.expanded {
