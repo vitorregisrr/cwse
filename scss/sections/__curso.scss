@@ -1,0 +1,98 @@
+.interna-curso {
+
+    &__back {
+        display: flex;
+        align-items: center;
+        color: $color-dark !important;
+        margin-bottom: 35px;
+        font-size: 16px;
+
+        i {
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    }
+
+    &__caption {
+        padding-right: 100px;
+
+        @media screen and (max-width: $bp-MD){
+            padding-right: 0;
+        }
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        color: #414292;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: bold;
+        color: #383838;
+
+        @media screen and (max-width: $bp-MD){
+            font-size: 37px;
+        }
+    }
+
+    &__infos{
+        display: flex;
+        align-items: center;
+        margin: 10px 0 23px 0;
+
+        @media screen and (max-width: $bp-MD){
+            flex-wrap: wrap;
+        }
+
+        li{
+            font-size: 14px;
+
+            i{
+                margin-right: 5px;
+            }
+
+            &:not(:last-child){
+                margin-right: 26px;
+            }
+        }
+
+
+    }
+
+    .markup{
+        font-size: 17px;
+
+        ul {
+            list-style: none;
+            margin-bottom: 29px;
+    
+            li {
+                position: relative;
+                padding-left: 30px;
+                
+                &:not(:last-child){
+                    margin-bottom: 13px;
+                }
+    
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background-color: #E1941B;
+                    border-radius: 50%;
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+
+        p{
+            margin-bottom: 25px;
+        }
+    }
+}

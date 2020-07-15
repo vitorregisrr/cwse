@@ -16,7 +16,7 @@
     "jquery-mask-plugin": "^1.14.15",
     "jquery-validation": "^1.19.0",
     "lazyload": "^2.0.0-rc.2",
-    "lightbox2": "^2.11.0",
+    "lightbox2": "^2.11.3",
     "lity-v2": "^2.3.2",
     "mdi": "2.1.19",
     "moment": "^2.24.0",
