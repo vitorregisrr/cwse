@@ -2937,6 +2937,12 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .interna-curso {
+    padding-top: 37px;
+  }
+}
+
 .interna-curso__back {
   position: absolute;
   top: -60px;
@@ -2947,6 +2953,12 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   color: #383838 !important;
   margin-bottom: 35px;
   font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .interna-curso__back {
+    top: -50px;
+  }
 }
 
 .interna-curso__back i {

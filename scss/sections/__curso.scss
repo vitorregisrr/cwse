@@ -1,6 +1,10 @@
 .interna-curso {
     padding-top: 20px;
 
+    @media screen and (max-width: $bp-MD){
+        padding-top: 37px;
+    }
+
     &__back {
         position: absolute;
         top: -60px;
@@ -11,6 +15,10 @@
         color: $color-dark !important;
         margin-bottom: 35px;
         font-size: 16px;
+
+        @media screen and (max-width: $bp-MD){
+            top: -50px;
+        }
 
         i {
             font-size: 14px;
