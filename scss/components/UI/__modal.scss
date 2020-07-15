@@ -95,11 +95,19 @@
     &__body{
         padding: 5px 33px 36px 33px;
         height: 100%;
+    }
 
+    .viewport{
+        height: 100% !important; 
+        width: 95% !important;
+
+        .overview{
+            width: 100%;
+        }
+    }
+
+    &.has-overlay{
         .viewport{
-            height: 100% !important; 
-            width: 95% !important;
-
             &:after{
                 content: '';
                 position: absolute;

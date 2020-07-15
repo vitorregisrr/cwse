@@ -18,6 +18,10 @@
         color: $color-dark !important;
         @include transition();
 
+        &.color-secondary{
+            color: $color-secondary !important;
+        }
+        
         &:hover{
             color: $color-primary !important;
         }

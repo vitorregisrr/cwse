@@ -44,13 +44,5 @@ main{
         @media screen and (max-width: $bp-LG){
             padding-top: 120px;
         }
-
-        &.pt-small{
-            padding-top: 140px;
-
-            @media screen and (max-width: $bp-MD){
-                padding-top: 100px;
-            }
-        }
     }
 }

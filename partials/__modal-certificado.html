@@ -1,0 +1,40 @@
+<div id="certificado-modal" class="modal" data-visible="false">
+
+    <div class="modal__content h-auto">
+        <div class="modal__header">
+            <h2 class="title">
+                Emitir certificado
+            </h2>
+            <button class="modal__close">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+
+        <div class="modal__body mt-4">
+            <form action="../cursos.html" METHOD="POST" class="w-100">
+                <input type="hidden" value="email" name="recebimento" id="input-recebimento"/>
+
+                <button class="btn-large-blue xl" data-value="email" type="button">
+                    <i class="far fa-envelope"></i>
+                    <div class="desc">
+                        Receber por e-mail
+                        <span>
+                            ana.luiza@gmail.com
+                        </span>
+                    </div>
+                </button>
+                <button class="btn-large-blue xl mt-2" data-value="impresso" type="button">
+                    <i class="fa fa-hands"></i>
+                    <div class="desc">
+                        Receber impresso
+                        <span>
+                            Retirar em mãos
+                        </span>
+                    </div>
+                </button>
+                <button type="submit" class="btn-default mt-2">Solicitar certificado</button>
+            </form>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+</div>
