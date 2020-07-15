@@ -1,0 +1,64 @@
+.radio-person {
+    width: 100%;
+    cursor: pointer;
+
+    input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .mask {
+        position: relative;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #F7F7F8;
+        width: 100%;
+        cursor: pointer;
+        padding: 19px 21px;
+        border: 1.2px solid transparent;
+        transition: all 0.4s;
+
+        img {
+            width: 51px;
+            height: 51px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 14px;
+        }
+
+        .desc {
+            font-size: 17px;
+            display: flex;
+            flex-direction: column;
+            font-weight: 500;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        .is-checked {
+            margin-left: auto;
+            width: 36px;
+            height: 36px;
+            background-image: url("../../images/ico/check.png");
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: all 0.4s;
+            opacity: 0;        }
+    }
+
+    input:checked ~ .mask {
+        border-color: #414292;
+
+        .is-checked{
+            opacity: 1;
+        }
+      }
+}

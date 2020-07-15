@@ -137,7 +137,7 @@
 }
 
 .backdrop-transparent {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
@@ -1848,6 +1848,25 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   transform: translateY(0px);
 }
 
+.modal__subscroll {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50vh;
+}
+
+.modal__subscroll .scroll-bar.vertical {
+  height: 100% !important;
+  width: 10px;
+  right: -5px;
+}
+
+@media screen and (min-width: 992px) {
+  .modal__subscroll {
+    height: 50vh;
+  }
+}
+
 .modal .backdrop {
   position: absolute;
   left: 0;
@@ -1859,6 +1878,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 }
 
 .modal__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -1872,6 +1892,10 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.modal__content.lg {
+  height: 75vh;
 }
 
 @media screen and (max-width: 576px) {
@@ -1937,6 +1961,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 }
 
 .modal__body {
+  position: relative;
   padding: 5px 33px 36px 33px;
   height: 100%;
 }
@@ -1957,6 +1982,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   bottom: 0;
   width: 100%;
   height: 20%;
+  z-index: 15;
   background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.5) 99%);
 }
 
@@ -2114,7 +2140,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 }
 
 .btn-large-blue.horizontal {
-  padding: 20px 80px;
+  padding: 20px 90px;
 }
 
 .btn-large-blue.active, .btn-large-blue:hover {
@@ -2373,6 +2399,176 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   font-size: 12px;
   margin-left: 8px;
   margin-top: 2px;
+}
+
+.badge-aluno {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #F7F7F8;
+  width: 100%;
+  cursor: pointer;
+  padding: 25px 30px;
+}
+
+.badge-aluno img {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 14px;
+}
+
+.badge-aluno .desc {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.badge-aluno .desc span {
+  font-weight: 400;
+}
+
+.badge-aluno__actions {
+  position: absolute;
+  z-index: 10;
+  bottom: -50px;
+  right: 147px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 244px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: translate(50%, 50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.badge-aluno__actions[data-visible="true"] {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.badge-aluno__actions li {
+  color: #383838;
+  padding: 20px 24px;
+  transition: all 0.4s;
+}
+
+.badge-aluno__actions li:hover {
+  background-color: #414292;
+  color: #fff;
+}
+
+.badge-aluno__actions li:hover i {
+  color: #fff;
+}
+
+.badge-aluno__actions li a {
+  color: inherit !important;
+}
+
+.badge-aluno__actions li i {
+  color: #414292;
+  margin-right: 8px;
+}
+
+.badge-aluno__actions li:not(:last-child) {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.badge-aluno .actions-button {
+  margin-left: auto;
+  width: 51px;
+  height: 51px;
+  background-image: url(../../images/ico/elipsis.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.4s;
+}
+
+.badge-aluno .actions-button:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.list-badges {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.radio-person {
+  width: 100%;
+  cursor: pointer;
+}
+
+.radio-person input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radio-person .mask {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #F7F7F8;
+  width: 100%;
+  cursor: pointer;
+  padding: 19px 21px;
+  border: 1.2px solid transparent;
+  transition: all 0.4s;
+}
+
+.radio-person .mask img {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 14px;
+}
+
+.radio-person .mask .desc {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.radio-person .mask .desc span {
+  font-weight: 400;
+}
+
+.radio-person .mask .is-checked {
+  margin-left: auto;
+  width: 36px;
+  height: 36px;
+  background-image: url("../../images/ico/check.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.radio-person input:checked ~ .mask {
+  border-color: #414292;
+}
+
+.radio-person input:checked ~ .mask .is-checked {
+  opacity: 1;
 }
 
 .h-card {

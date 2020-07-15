@@ -22,6 +22,23 @@
         }
     }
 
+    &__subscroll{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 50vh;
+
+        .scroll-bar.vertical{
+            height: 100% !important;
+            width: 10px;
+            right: -5px;
+        }
+
+        @media screen and (min-width: $bp-LG){
+            height: 50vh;
+        }
+    }
+
     .backdrop{
         position: absolute;
         left: 0;
@@ -33,6 +50,7 @@
     }
     
     &__content{
+        position: relative;
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -42,6 +60,10 @@
         box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.267);
         transform: translateY(-60px);
         @include transition(0.4s);
+
+        &.lg{
+            height: 75vh;
+        }
         
         @media screen and (max-width: $bp-SM){
             width: 89vw;
@@ -93,6 +115,7 @@
     }
 
     &__body{
+        position: relative;
         padding: 5px 33px 36px 33px;
         height: 100%;
     }
@@ -115,6 +138,7 @@
                 bottom: 0;
                 width: 100%;
                 height: 20%;
+                z-index: 15;
                 background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 0.5) 99%);
             }
         }

@@ -3,7 +3,7 @@
 
     //!!! DROPDOWNS DO NAVBAR !!!//
 
-    function closeAll(close1, close2, close3){
+    function closeAll(close1, close2, close3, close4){
         $('#menu-dropdown-backdrop').attr('data-visible', false);
         if(close1){
             $('.main-nav .menu-dropdown').attr('data-visible', false);
@@ -18,6 +18,10 @@
         if(close3){
             $('.main-nav__actions-mobilemenu').attr('data-active', false);
             $('.main-nav .mobilem-dropdown').attr('data-visible', false);
+        }
+
+        if(close4){
+            $('.badge-aluno .badge-aluno__actions').attr('data-visible', false);
         }
     }
 
@@ -66,7 +70,7 @@
         }
     });
 
-    $('#menu-dropdown-backdrop').click(() => closeAll(true, true, true));
+    $('#menu-dropdown-backdrop').click(() => closeAll(true, true, true, true));
 
     $('.mobilem-dropdown .has-dropdown > a').click( function(){
         const isActive = !($(this).parent().attr('data-active') == 'true');
@@ -77,4 +81,18 @@
 
     // !!! END DROPDOWNS NAVBAR !!!/
 
+    // DROPDOWN BADGE ALUNO
+    $('.badge-aluno').click( function(e){
+        e.preventDefault();
+        $(this).siblings().find('.badge-aluno__actions').attr('data-visible', false);
+        const isActive = !($(this).find('.badge-aluno__actions').attr('data-visible') == 'true');
+        $(this).find('.badge-aluno__actions').attr('data-visible', isActive );
+        $('#menu-dropdown-backdrop').attr('data-visible', true);
+
+        if(!isActive){
+            $('#menu-dropdown-backdrop').attr('data-visible', false);
+        }else{
+            $('#menu-dropdown-backdrop').attr('data-visible', true);
+        }
+    });
 })();
