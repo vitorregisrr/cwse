@@ -2505,6 +2505,91 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   flex-direction: column-reverse;
 }
 
+.card-pagamento {
+  background-color: #F7F7F8;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.card-pagamento__img {
+  height: 90px;
+  width: 142px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.card-pagamento__top {
+  display: flex;
+  padding: 21px 26px;
+}
+
+.card-pagamento__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1.2px solid #eeeeee;
+  padding: 21px 26px;
+}
+
+.card-pagamento__footer img {
+  width: 34px;
+}
+
+.card-pagamento__footer b {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.card-pagamento__footer div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .card-pagamento__footer div {
+    margin-bottom: 7px;
+    width: 50%;
+  }
+}
+
+.card-pagamento__caption {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-pagamento__caption {
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-left: 12px;
+  }
+}
+
+.card-pagamento__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card-pagamento__price {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  color: #414292;
+  font-weight: 500;
+}
+
+.card-pagamento__price span {
+  font-size: 14px;
+  color: #909090;
+  font-weight: 400;
+  margin-top: 0;
+}
+
 .radio-person {
   width: 100%;
   cursor: pointer;
