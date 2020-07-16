@@ -42,7 +42,7 @@
 
 <!-- Vendor JS -->
 <script src="../vendors/js/vendor.bundle.base.js" defer></script>
-<script src="../vendors/external/jquery.custom-scrollbar.js" defer></script>
+<script src="../vendors2/jquery.custom-scrollbar.js" defer></script>
 
 <!-- Custom JS -->
 <script src="../js/misc.js" defer></script>
@@ -57,7 +57,7 @@
 
 <!-- Vendor CSS -->
 <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
-<link rel="stylesheet" href="../vendors/external/jquery.custom-scrollbar.css">
+<link rel="stylesheet" href="../vendors2/jquery.custom-scrollbar.css">
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="../css/style.css">
@@ -420,7 +420,7 @@
                                         <i class="far fa-check-circle ml-2"></i>
                                     </p>
 
-                                    <a role="button" href="#" class="btn-large-blue horizontal d-inline-block" data-toggle="modal" data-target="#certificado-modal">
+                                    <a role="button" href="#" class="btn-large-blue horizontal d-inline-block" data-toggle="c-modal" data-target="#certificado-modal">
                                         <i class="fa fa-certificate mr-2"></i>
                                         Emitir certificado
                                     </a>
@@ -615,19 +615,19 @@
 
      <!-- partial:../partials/__modal-certificado.html -->
 
-     <div id="certificado-modal" class="modal" data-visible="false">
+     <div id="certificado-modal" class="c-modal" data-visible="false">
 
-    <div class="modal__content h-auto">
-        <div class="modal__header">
+    <div class="c-modal__content h-auto">
+        <div class="c-modal__header">
             <h2 class="title">
                 Emitir certificado
             </h2>
-            <button class="modal__close">
+            <button class="c-modal__close">
                 <i class="fa fa-times"></i>
             </button>
         </div>
 
-        <div class="modal__body mt-4">
+        <div class="c-modal__body mt-4">
             <form action="../cursos.html" METHOD="POST" class="w-100">
                 <input type="hidden" value="email" name="recebimento" id="input-recebimento"/>
 

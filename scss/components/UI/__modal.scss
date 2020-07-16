@@ -1,4 +1,4 @@
-.modal{
+.c-modal{
     position: absolute;
     left: 0;
     top: 0;
@@ -17,7 +17,7 @@
         opacity: 1;
         pointer-events: all;
         
-        .modal__content{
+        .c-modal__content{
             transform: translateY(0px);
         }
     }

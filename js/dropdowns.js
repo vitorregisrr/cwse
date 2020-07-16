@@ -22,6 +22,7 @@
 
         if(close4){
             $('.badge-aluno .badge-aluno__actions').attr('data-visible', false);
+            $('.badge-aluno .actions-button').attr('data-expanded', false );
         }
     }
 
@@ -82,11 +83,12 @@
     // !!! END DROPDOWNS NAVBAR !!!/
 
     // DROPDOWN BADGE ALUNO
-    $('.badge-aluno').click( function(e){
+    $('.badge-aluno button').click( function(e){
         e.preventDefault();
-        $(this).siblings().find('.badge-aluno__actions').attr('data-visible', false);
-        const isActive = !($(this).find('.badge-aluno__actions').attr('data-visible') == 'true');
-        $(this).find('.badge-aluno__actions').attr('data-visible', isActive );
+        $(this).parent().siblings().find('.badge-aluno__actions').attr('data-visible', false);
+        const isActive = !($(this).parent().find('.badge-aluno__actions').attr('data-visible') == 'true');
+        $(this).parent().find('.badge-aluno__actions').attr('data-visible', isActive );
+        $(this).attr('data-expanded', isActive );
         $('#menu-dropdown-backdrop').attr('data-visible', true);
 
         if(!isActive){

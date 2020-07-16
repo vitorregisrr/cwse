@@ -86,6 +86,11 @@
         background-position: center center;
         background-repeat: no-repeat;
         transition: all 0.4s;
+        border: none;
+        
+        &[data-expanded="true"]{
+            background-image: url(../../images/ico/close.png);
+        }
 
         &:hover{
             @include scale(1.1);
