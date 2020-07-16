@@ -3429,7 +3429,7 @@ button:focus {
 }
 
 .meu-perfil__img img {
-  border: 1px solid #414292;
+  border: 1.4px solid #414292;
   width: 264px;
   height: 264px;
   border-radius: 50%;
