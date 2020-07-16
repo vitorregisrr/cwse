@@ -1,0 +1,52 @@
+.meu-perfil {
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        img {
+            border: 1px solid #414292;
+            width: 264px;
+            height: 264px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+
+    &__menu{
+        .title{
+            font-size: 26px;
+            font-weight: 500;
+            color: #383838;
+            margin-bottom: 20px;
+        }
+
+        li{
+            margin-bottom: 16px;
+
+            @media screen and (max-width: $bp-MD){
+                margin-bottom: 9px;
+            }
+        }
+        
+        a{
+            color: $color-dark;
+            transition: all 0.4s;
+
+            i{
+                margin-right: 5px;
+            }
+
+            &:hover, &.active{
+                color: #414292;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__title{
+        font-size: 32px;
+        font-weight: bold;
+    }
+}

@@ -2403,7 +2403,7 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 
 .badge-aluno {
   position: relative;
-  z-index: 9;
+  z-index: 6;
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -3257,6 +3257,57 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
 
 .interna-curso .markup p {
   margin-bottom: 25px;
+}
+
+.meu-perfil__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.meu-perfil__img img {
+  border: 1px solid #414292;
+  width: 264px;
+  height: 264px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.meu-perfil__menu .title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #383838;
+  margin-bottom: 20px;
+}
+
+.meu-perfil__menu li {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .meu-perfil__menu li {
+    margin-bottom: 9px;
+  }
+}
+
+.meu-perfil__menu a {
+  color: #383838;
+  transition: all 0.4s;
+}
+
+.meu-perfil__menu a i {
+  margin-right: 5px;
+}
+
+.meu-perfil__menu a:hover, .meu-perfil__menu a.active {
+  color: #414292;
+  font-weight: 500;
+}
+
+.meu-perfil__title {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 body {
