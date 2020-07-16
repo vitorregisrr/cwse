@@ -85,9 +85,10 @@
     // DROPDOWN BADGE ALUNO
     $('.badge-aluno button').click( function(e){
         e.preventDefault();
-        $(this).parent().siblings().find('.badge-aluno__actions').attr('data-visible', false);
-        const isActive = !($(this).parent().find('.badge-aluno__actions').attr('data-visible') == 'true');
-        $(this).parent().find('.badge-aluno__actions').attr('data-visible', isActive );
+        $('.badge-aluno .actions-button').attr('data-expanded', false );
+        $('.badge-aluno').not($(this).closest('.badge-aluno')).find('.badge-aluno__actions').attr('data-visible', false);
+        const isActive = !($(this).closest('.badge-aluno').find('.badge-aluno__actions').attr('data-visible') == 'true');
+        $(this).closest('.badge-aluno').find('.badge-aluno__actions').attr('data-visible', isActive );
         $(this).attr('data-expanded', isActive );
         $('#menu-dropdown-backdrop').attr('data-visible', true);
 

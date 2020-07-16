@@ -95,3 +95,36 @@
         }
     }
 }
+
+.input-search{
+    display: flex;
+    align-items: center;
+    display: flex;
+    margin-right: 120px;
+    width: auto;
+
+    button {
+        background: none;
+        border: none;
+        color: #414292;
+        margin-right: 6px;
+    }
+
+    input {
+        background: none;
+        border: none;
+        color: #909090;
+        width: 300px;
+
+        @media screen and (max-width: $bp-LG){
+            width: 110px;
+        }
+        
+        &:active,
+        &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
