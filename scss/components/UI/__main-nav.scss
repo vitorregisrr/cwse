@@ -566,11 +566,16 @@
                     }
                 }
             }
+            
             &:not(:last-child) {
                 margin-right: 56px;
 
                 @media screen and (max-width: $bp-XL){
                     margin-right: 36px;
+                }
+
+                @media screen and (max-width: $bp-LG){
+                    margin-right: 25px;
                 }
 
                 @media screen and (max-width: $bp-MD){

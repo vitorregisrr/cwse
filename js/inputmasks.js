@@ -22,7 +22,4 @@
             $('#txtInput').css('font-size', '24px');
         }
     });
-
-    
-
 })();

@@ -1387,6 +1387,12 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .main-nav__items li:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-nav__items li:not(:last-child) {
     margin-right: 0;

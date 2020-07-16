@@ -9,4 +9,5 @@
         $(this).attr('aria-expanded', !isExpanded);
     });
     
+    window.dispatchEvent(new Event('resize'));
 })();
