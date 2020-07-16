@@ -213,6 +213,10 @@
   font-weight: 500 !important;
 }
 
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .inner-title {
   font-weight: 700;
   font-size: 36px;
@@ -1678,45 +1682,6 @@ button:focus {
   opacity: 1;
 }
 
-button[data-toggle="collapse"] {
-  width: 100%;
-  text-transform: unset;
-  text-align: left;
-  font-weight: 700;
-  background-color: transparent !important;
-  border: none !important;
-  color: #fff !important;
-  padding: 0 40px 0 0 !important;
-  text-decoration: none !important;
-  white-space: normal;
-}
-
-button[data-toggle="collapse"]:after {
-  content: '\f105';
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  top: 44%;
-  transform: translateY(-50%);
-  right: 21px;
-  font-size: 14px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-  button[data-toggle="collapse"]:after {
-    font-size: 13px;
-  }
-}
-
-button[data-toggle="collapse"][aria-expanded="true"]:after {
-  content: '\f107';
-}
-
 .list-icon {
   padding-left: 30px;
 }
@@ -2588,6 +2553,39 @@ button[data-toggle="collapse"][aria-expanded="true"]:after {
   color: #909090;
   font-weight: 400;
   margin-top: 0;
+}
+
+.faq-item {
+  background-color: #F7F7F8;
+  border-radius: 5px;
+  padding: 29px 16px;
+  margin-bottom: 20px;
+}
+
+.faq-item__toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  font-weight: 500;
+  color: #383838 !important;
+  text-align: left;
+}
+
+.faq-item__toggler i {
+  display: block;
+  transition: all 0.4s;
+}
+
+.faq-item__toggler[aria-expanded="true"] i {
+  transform: rotate(-180deg);
+}
+
+.faq-item__body {
+  padding-top: 15px;
 }
 
 .radio-person {
