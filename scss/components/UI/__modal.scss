@@ -64,6 +64,12 @@
         &.lg{
             height: 75vh;
         }
+
+        &.xl{
+            width: 80vw;
+            max-width: 1000px;
+            height: 73vh;
+        }
         
         @media screen and (max-width: $bp-SM){
             width: 89vw;
@@ -81,6 +87,20 @@
         justify-content: space-between;
         align-items: center;
         padding: 32px 33px 10px 33px;
+
+        &.sm{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: -55px;
+            padding: 5px;
+
+            .c-modal__close{
+                color: #fff !important;
+                font-size: 24px;
+                padding: 0;
+            }
+        }
         
         .title{
             font-size: 24px;
@@ -127,6 +147,11 @@
         .overview{
             width: 100%;
         }
+    }
+
+    iframe{
+        width: 100%;
+        height: 100%;
     }
 
     &.has-overlay{

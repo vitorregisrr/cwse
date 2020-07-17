@@ -382,10 +382,10 @@
                                         incidência de lesões e os riscos e perigos são reconhecidamente maiores:
                                     </p>
                                     <ul>
-                                        <li>Transporte Manual de cargas</li>
-                                        <li>Prevenção e Combate a Incêndio</li>
-                                        <li>Primeiros socorros</li>
-                                        <li>Trabalho e resgate em altura (NR-35)</li>
+                                        <li>Transporte Manual de cargas <i class="far fa-clock color-secondary mx-2"></i> 4 horas</li>
+                                        <li>Prevenção e Combate a Incêndio <i class="far fa-clock color-secondary mx-2"></i> 4 horas</li>
+                                        <li>Primeiros socorros <i class="far fa-clock color-secondary mx-2"></i> 4 horas</li>
+                                        <li>Trabalho e resgate em altura (NR-35) <i class="far fa-clock color-secondary mx-2"></i> 4 horas</li>
                                     </ul>
                                     <p>
                                         A CWSE BRASIL COMPANY é uma empresa homologada como Centro de Treinamento GWO,
@@ -410,8 +410,17 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="v-card-2 wow fadeInRight" data-wow-delay="0.1s">
-                                <div class="v-card-2__img">
-                                    <img src="../images/thumbs/curso-1.png" alt="Foto do curso">
+                                <!-- Se for vídeo, seguir o template de v-card-2__img abaixo e
+                                    colocar o iframe do vídeo lá no modal do video
+                                    que está no final do body. Se for imagem, seguir a versao só com imagem do arquivo
+                                .curso/html -->
+                                <div class="v-card-2__img video">
+                                    <a href="#" data-target="#video-modal" data-toggle="c-modal">
+                                        <div class="overlay-video">
+                                            <i class="fa fa-play"></i>
+                                        </div>
+                                        <img src="../images/thumbs/curso-1.png" alt="Foto do curso">
+                                    </a>
                                 </div>
                                 <div class="v-card-2__caption">
                                     <div class="v-card-2__caption-price">
@@ -602,8 +611,28 @@
                 </div>
             </div>
         </section>
-
     </main>
+    
+    <!-- MODAL DO VIDEO -->
+    <div id="video-modal" class="c-modal" data-visible="false">
+
+        <div class="c-modal__content xl">
+            <div class="c-modal__header sm">
+                <h2 class="title">
+                    
+                </h2>
+                <button class="c-modal__close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+    
+            <div class="c-modal__body p-0">
+                <iframe src="https://www.youtube.com/embed/L4voMnknmaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <div class="backdrop"></div>
+    </div>
 </body>
 
 </html>
