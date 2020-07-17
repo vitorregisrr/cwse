@@ -22,4 +22,17 @@
             $('#txtInput').css('font-size', '24px');
         }
     });
+
+    $('.quantity-input .control').click( function(){
+        const input =  $(this).parent().find('input');
+        const currVal = parseInt(input.val())
+
+        if($(this).hasClass('minor')){
+            input.val(currVal === 1 ? 1 : currVal-1)
+        }else{
+            input.val(currVal+1);
+        }
+    })
+
+
 })();

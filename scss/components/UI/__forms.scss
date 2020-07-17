@@ -128,3 +128,51 @@
         }
     }
 }
+
+.quantity-input{
+    display: flex;
+    border: 1.3px solid $color-primary;
+    border-radius: 10px;
+    
+    input, button{
+        height: 41px;
+    }
+
+    input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: none;
+        border: none;
+        width: 90px;
+        background-color: #fff;
+        font-size: 24px;
+        color: $color-dark;
+        font-weight: 500;
+        
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        &[type=number] {
+        -moz-appearance: textfield;
+        }
+    }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $color-primary;
+        border: none;
+        height: 41px;
+        width: 41px;
+        color: #fff;
+    }
+}
