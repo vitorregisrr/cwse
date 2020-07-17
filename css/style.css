@@ -3021,7 +3021,7 @@ button:focus {
   margin-left: auto;
   width: 36px;
   height: 36px;
-  background-image: url("../../images/ico/check.png");
+  background-image: url("../images/ico/check.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3189,6 +3189,7 @@ button:focus {
 }
 
 .v-card__caption-time i {
+  color: #414292;
   margin-right: 9px;
 }
 
