@@ -98,6 +98,26 @@
     }
 }
 
+.btn-large-danger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.2px solid #FF5757;
+    color: #FF5757; 
+    background: none;
+    border-radius: 5px;
+    padding: 36px 20px 36px 20px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    @include transition();
+
+    &.active, &:hover{
+        background-color: #FF5757;
+        color: #fff;
+    }
+}
+
 .btn-transparent{
     display: flex;
     align-items: center;

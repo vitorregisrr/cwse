@@ -3,7 +3,7 @@
 
     //!!! DROPDOWNS DO NAVBAR !!!//
 
-    function closeAll(close1, close2, close3, close4){
+    function closeAll(close1, close2, close3, close4, close5){
         $('#menu-dropdown-backdrop').attr('data-visible', false);
         if(close1){
             $('.main-nav .menu-dropdown').attr('data-visible', false);
@@ -23,6 +23,11 @@
         if(close4){
             $('.badge-aluno .badge-aluno__actions').attr('data-visible', false);
             $('.badge-aluno .actions-button').attr('data-expanded', false );
+        }
+
+        if(close5){
+            $('.badge-curso .badge-curso__actions').attr('data-visible', false);
+            $('.badge-curso .actions-button').attr('data-expanded', false );
         }
     }
 
@@ -89,6 +94,23 @@
         $('.badge-aluno').not($(this).closest('.badge-aluno')).find('.badge-aluno__actions').attr('data-visible', false);
         const isActive = !($(this).closest('.badge-aluno').find('.badge-aluno__actions').attr('data-visible') == 'true');
         $(this).closest('.badge-aluno').find('.badge-aluno__actions').attr('data-visible', isActive );
+        $(this).attr('data-expanded', isActive );
+        $('#menu-dropdown-backdrop').attr('data-visible', true);
+
+        if(!isActive){
+            $('#menu-dropdown-backdrop').attr('data-visible', false);
+        }else{
+            $('#menu-dropdown-backdrop').attr('data-visible', true);
+        }
+    });
+
+    // DROPDOWN BADGE CURSO
+    $('.badge-curso button').click( function(e){
+        e.preventDefault();
+        $('.badge-curso .actions-button').attr('data-expanded', false );
+        $('.badge-curso').not($(this).closest('.badge-curso')).find('.badge-curso__actions').attr('data-visible', false);
+        const isActive = !($(this).closest('.badge-curso').find('.badge-curso__actions').attr('data-visible') == 'true');
+        $(this).closest('.badge-curso').find('.badge-curso__actions').attr('data-visible', isActive );
         $(this).attr('data-expanded', isActive );
         $('#menu-dropdown-backdrop').attr('data-visible', true);
 
