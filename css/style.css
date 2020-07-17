@@ -1773,6 +1773,75 @@ button:focus {
   color: #fff;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination {
+    padding-top: 20px;
+  }
+}
+
+.pagination ul {
+  display: flex;
+}
+
+.pagination ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination ul li {
+    margin: 0 5px;
+  }
+  .pagination ul li:first-child, .pagination ul li:last-child {
+    display: none;
+  }
+}
+
+.pagination ul li i.fa.fa-chevron-left, .pagination ul li i.fa.fa-chevron-right {
+  display: block;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination ul li i.fa.fa-chevron-left, .pagination ul li i.fa.fa-chevron-right {
+    margin: 0 10px;
+  }
+}
+
+.pagination ul li a {
+  color: #383838;
+}
+
+.pagination ul li.number {
+  width: 41px;
+  height: 41px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.pagination ul li.number.active, .pagination ul li.number:hover {
+  background-color: #414292;
+}
+
+.pagination ul li.number.active a, .pagination ul li.number:hover a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
 .list-icon {
   padding-left: 30px;
 }
@@ -2183,6 +2252,7 @@ button:focus {
   background-color: transparent;
   -webkit-appearance: none;
   appearance: none;
+  text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -2218,6 +2288,7 @@ button:focus {
   margin-top: 3px;
   font-weight: 400;
   color: #909090;
+  transition: all 0.4s;
 }
 
 .btn-large-blue.horizontal {
@@ -2227,6 +2298,10 @@ button:focus {
 .btn-large-blue.active, .btn-large-blue:hover {
   background-color: #414292;
   color: #fff;
+}
+
+.btn-large-blue.active span, .btn-large-blue:hover span {
+  color: #fff !important;
 }
 
 .btn-large-danger {

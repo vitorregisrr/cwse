@@ -55,6 +55,7 @@
     background-color: transparent;
     -webkit-appearance: none;
     appearance: none;
+    text-align: center;
     @include transition();
 
 
@@ -84,6 +85,7 @@
                  margin-top: 3px;
                  font-weight: 400;
                  color: #909090;
+                 transition: all 0.4s;
              }
          }
     }
@@ -95,6 +97,10 @@
     &.active, &:hover{
         background-color: #414292;
         color: #fff;
+
+        span{
+            color: #fff !important;
+        }
     }
 }
 
