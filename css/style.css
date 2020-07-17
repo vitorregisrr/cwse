@@ -2695,7 +2695,7 @@ button:focus {
   margin-left: auto;
   width: 51px;
   height: 51px;
-  background-image: url(../../images/ico/elipsis.png);
+  background-image: url(../images/ico/elipsis.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2705,7 +2705,7 @@ button:focus {
 }
 
 .badge-aluno .actions-button[data-expanded="true"] {
-  background-image: url(../../images/ico/close.png);
+  background-image: url(../images/ico/close.png);
 }
 
 .badge-aluno .actions-button:hover {
@@ -2832,7 +2832,7 @@ button:focus {
   margin-left: auto;
   width: 47px;
   height: 47px;
-  background-image: url(../../images/ico/elipsis.png);
+  background-image: url(../images/ico/elipsis.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2842,7 +2842,7 @@ button:focus {
 }
 
 .badge-curso .actions-button[data-expanded="true"] {
-  background-image: url(../../images/ico/close.png);
+  background-image: url(../images/ico/close.png);
 }
 
 .badge-curso .actions-button:hover {

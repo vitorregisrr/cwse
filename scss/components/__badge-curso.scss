@@ -102,7 +102,7 @@
         margin-left: auto;
         width: 47px;
         height: 47px;
-        background-image: url(../../images/ico/elipsis.png);
+        background-image: url(../images/ico/elipsis.png);
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -111,7 +111,7 @@
         z-index: 8;
         
         &[data-expanded="true"]{
-            background-image: url(../../images/ico/close.png);
+            background-image: url(../images/ico/close.png);
         }
 
         &:hover{
