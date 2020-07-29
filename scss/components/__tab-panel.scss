@@ -1,5 +1,6 @@
 .tab-content{
-    position: relative;
+    &.custom{
+        position: relative;
     border: none;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.069);
     margin-top: -10px;
@@ -10,6 +11,7 @@
 
     @media screen and (max-width: $bp-MD){
         padding: 20px;
+    }
     }
 }
 

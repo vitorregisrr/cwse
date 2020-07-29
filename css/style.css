@@ -2757,7 +2757,7 @@ select.form-control {
   flex-direction: column-reverse;
 }
 
-.tab-content {
+.tab-content.custom {
   position: relative;
   border: none;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.069);
@@ -2769,7 +2769,7 @@ select.form-control {
 }
 
 @media screen and (max-width: 768px) {
-  .tab-content {
+  .tab-content.custom {
     padding: 20px;
   }
 }
