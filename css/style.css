@@ -1628,6 +1628,10 @@ button:focus {
   border-color: #e07777;
 }
 
+.form-control.error ~ label {
+  color: #e07777;
+}
+
 .select-transparent {
   background: transparent !important;
   background-color: transparent !important;
@@ -1771,6 +1775,10 @@ button:focus {
   height: 41px;
   width: 41px;
   color: #fff;
+}
+
+select.form-control {
+  min-height: 50px;
 }
 
 .pagination {
@@ -2342,6 +2350,34 @@ button:focus {
   font-size: 13px;
 }
 
+.btn-bank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+  background-color: #fff;
+  border: none;
+  padding: 7px;
+  border: 2px solid rgba(59, 41, 1, 0.07);
+  transition: all 0.4s;
+}
+
+.btn-bank img {
+  width: 38px;
+}
+
+.btn-bank:active, .btn-bank:hover {
+  border-color: #E1941B;
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
 .footer {
   padding: 30px 0;
   background-color: #FBF8F5;
@@ -2719,6 +2755,78 @@ button:focus {
 .list-badges {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.tab-content {
+  position: relative;
+  border: none;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.069);
+  margin-top: -10px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 40px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-content {
+    padding: 20px;
+  }
+}
+
+.nav-tabs {
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px -3px 20px rgba(0, 0, 0, 0.07);
+    border-bottom: 2px solid #E1941B;
+    margin-bottom: 9px;
+  }
+}
+
+.nav-tabs li a {
+  display: block;
+  padding: 20px 30px;
+  color: #383838;
+  background-color: transparent;
+  box-shadow: 3px -3px 20px transparent;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tabs li a {
+    width: 100%;
+    background-color: #fff !important;
+  }
+}
+
+.nav-tabs li a:hover {
+  border: none;
+}
+
+.nav-tabs li a.active {
+  border: none;
+  color: #E1941B !important;
+  font-weight: 500;
+  box-shadow: -3px -3px 20px rgba(0, 0, 0, 0.089);
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tabs li a.active {
+    box-shadow: none;
+    background-color: #E1941B !important;
+    color: #fff !important;
+  }
+}
+
+.tab-content {
+  border: 0;
 }
 
 .badge-curso {
@@ -3960,6 +4068,66 @@ button:focus {
   text-align: right;
   color: #909090;
   margin-bottom: 20px;
+}
+
+.checkout__items {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F8;
+  min-height: 100%;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.checkout__items li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #b6b3b3;
+}
+
+@media screen and (max-width: 992px) {
+  .checkout__items li {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.checkout__items li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  padding-bottom: 15px;
+}
+
+.checkout__items li b {
+  color: #383838;
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+@media screen and (max-width: 992px) {
+  .checkout__items li b {
+    font-size: 17px;
+  }
+}
+
+.checkout__items li div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+  .checkout__items li div:last-child {
+    margin-top: 3px;
+    justify-content: flex-end;
+  }
+}
+
+.checkout__items li span {
+  color: #414292;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 20px;
 }
 
 .meu-perfil__img {

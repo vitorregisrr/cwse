@@ -137,3 +137,27 @@
         font-size: 13px;
     }
 }
+
+.btn-bank{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+    background-color: #fff;
+    border: none;
+    padding: 7px;
+    border: 2px solid rgba(59, 41, 1, 0.07);
+    transition: all 0.4s;
+
+    img{
+        width: 38px;
+    }
+
+    &:active, &:hover{
+        border-color: $color-primary;
+        @include scale(1.08);
+    }
+}

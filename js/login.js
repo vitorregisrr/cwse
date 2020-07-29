@@ -1,9 +1,10 @@
 (function () {
     'use strict';
 
-    $('[data-toggle="tab"]').click( function(e){
+    $('[data-toggle="c-tab"]').click( function(e){
         e.preventDefault();
         e.stopPropagation();
+        
         const id = $(event.target).attr('href');
         $('.login__tab').removeClass('active');
         $(id).addClass('active');

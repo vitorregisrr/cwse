@@ -8,6 +8,7 @@
     color: #383838;
     font-weight: 400;
     border-radius: 5px;
+
     &:focus {
         box-shadow: none;
         border: 1px solid #636363;
@@ -24,6 +25,10 @@
 
     &.error {
         border-color: rgb(224, 119, 119);
+        
+        & ~ label{
+            color: rgb(224, 119, 119);            
+        }
     }
 
 }
@@ -175,4 +180,8 @@
         width: 41px;
         color: #fff;
     }
+}
+
+select.form-control{
+    min-height: 50px;
 }
