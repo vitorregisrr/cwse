@@ -1,2 +1,3 @@
-# or2u  
-## [Clique aqui para acessar a prévia estática!](https://vitorregisrr.github.io/cwse/pages/)
+# Plataforma de cursos CWSE  
+
+Clique [aqui](https://vitorregisrr.github.io/cwse/pages/) para acessar a prévia estática.
